@@ -12,32 +12,119 @@
 <body>
     <!--header-->
     <header>
-        <div class="namebox"></div>
-            <h1><a href="<!--add link to webpage here-->">Jackson Hanks</a></h1>
-        </div>
+            <div class="name-box">
+                <h1 href="<!--add link to webpage here-->">Jackson Hanks</h1>
+            </div>
+
         <!--navbar-->
-        <nav>
+        <nav class="main-nav">
             <ul>
+               <li><a href="#aboutme">About Me</a></li> 
                <li>
-                <a href="AboutMe">About Me</a>
-                </li> 
-               <li>
-                <a href="Work">Work</a>
+                <a href="#work">Work</a>
                 </li>
                <li>
-                <a href="ContactMe">Contact Me</a>
+                <a href="#contactme">Contact Me</a>
                 </li>
                <li>
-                <a href="Resume">Resume</a>
+                <a href="#resume">Resume</a>
                 </li>
             </ul>
         </nav>
     </header>
 
+    <!--figure-->
     <figure class="hero">
         <img class="banner" src=".\assets\MountainScapeBanner.jpg" alt="Banner image of mountain range" title="Banner image of mountain range">
-        <figcaption class="figure labelbox">Improving Ecological awareness and public safety with software development</figcaption>
+        <figcaption class=" name-box-banner-text"><p>Jackson Hanks, Improving ecological awareness and public safety with software development</p>
+        </figcaption>
     </figure>
  
+    <!--main content-->
+    <main>
+        <!--about me section-->
+        <section clas="aboutme" id="aboutme">
+            <h2 class="aboutme-head-title">About Me</h2>
+            <article>
+                <img src="" alt="Photo of me and my dog, Lila" title="Photo of me and my dog, Lila">
+                <p>
+                    I am passionate about ecology and spend my free time exploring with my dog, Lila.  I currently work as an Executive Assistant for a software development company, Cardinal Tracking, and am attending a full-stack bootcamp to be more involved and aware of our various product lines.
+                </p>
+            </article>
+        </section>
+
+        <!--work section-->
+        <section class="work" id="work">
+            <h2 class="work-head-title">Work</h2>
+            <article class="work section article">
+                <!--large work portion-->
+                <div class="large work">
+                    <a href="https://jacksonhanks.github.io/Code-Refractor-HTML-CSS-and-Git/">
+                        <img src=".\assets\HoriseonScreenshot.png" alt="Screenshot of refractored Horiseon webpage" title="Screenshot of refractored Horiseon webpage">
+                    </a>
+                    <figcaption class="caption work scetion">Horiseon Code Refractor HTML/CSS</figcaption>
+                </div>
+                <!--small work portion-->
+                <!--Prework-study-guide-->
+                <div class="small work">
+                    <a href="">
+                        <img src="" alt="Screenshot of Prework-Study-Guide HTML/CSS" title="Screenshot of Prework-Study-Guide HTML/CSS">
+                    </a>
+                    <figcaption class="caption work section">Prework-Study-Guide HTML/CSS</figcaption>
+                </div>
+                <!--password generator-->
+                <div class="small work">
+                    <a href="">
+                        <img src="" alt="Coming Soon displayed over banner image" title="coming soon displayed over banner image">
+                    </a>
+                    <figcaption class="caption work section">Coming soon: Password Generator JavaScript</figcaption>
+                </div>
+                <!--coming soon-->
+                <div class="small work">
+                    <a href="">
+                        <img src="" alt="Coming Soon displayed over banner image" title="coming soon displayed over banner image">
+                    </a>
+                    <figcaption class="caption work section">Coming soon</figcaption>
+                </div>
+                <!--coming soon 2-->
+                <div class="small work">
+                    <a href="">
+                        <img src="" alt="Coming Soon displayed over banner image" title="coming soon displayed over banner image">
+                    </a>
+                    <figcaption class="caption work section">Coming soon: Password Generator JavaScript</figcaption>
+                </div>
+            </article>
+        </section>
+
+        <!--contact me section-->
+        <section class="contactme">
+            <h2 class="contactme-head-title">Contact Me</h2>
+            <article>
+                <nav>
+                    <li>
+                        <a class="contact nav" href="303-435-9990"></a>
+                    </li>
+                    <li>
+                        <a class="contact me" href="jhanks@cardinaltracking.com"></a>
+                    </li>
+                    <li>
+                        <a class="contact me" href=""></a>
+                    </li>
+                </nav>
+            </article>
+        </section>
+
+        <!--Resume section-->
+        <section class="resume">
+            <h2 class="resume-head-title">Resume</h2>
+            <article class="resume section">
+                <nav>
+                    <li>
+
+                    </li>
+                </nav>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
