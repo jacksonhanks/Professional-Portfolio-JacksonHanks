@@ -1,3 +1,4 @@
+/*universal selctor style*/
 * {
     margin: 0;
     border: 0;
@@ -5,11 +6,29 @@
     box-sizing: border-box;
 }
 
+/*color variable styles*/
 :root {
     --lblue: #ADD8E6;
     --headblue: #191970;
     --darkblue: #00008B;
     --parblue: #4169E1;
+    --nameblue: #0000CD;
+    --offwhite: #FFF8DC;
+    --titleblue: #F0FFFF;
+}
+
+/*elements style*/
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--lblue);
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: left;
+    color: var(--darkblue);
 }
 
 a {
@@ -19,11 +38,14 @@ a {
 p {
     color: var(--parblue);
 }
+
+/*body style*/
 body {
     background-color: var(--lblue);
     font-family: 'Times New Roman', Times, serif;
 }
 
+/*header/main navbar style*/
 header {
     padding-top: 6px;
     padding-bottom: 6px;
@@ -54,29 +76,67 @@ header .main-nav ul li a {
     font-size: 25px;
 }
 
-
-h1 {
-    font-size: 40px;
-    font-weight: bold;
-    color: var(--lblue);
-}
-
-h2 {
-    font-size: 40px;
-    font-weight: bolder;
-    text-align: left;
-    color: var(--darkblue);
-}
-
+/*figure (banner) style*/
 .banner {
     height: 400px;
     width: 100%;
     margin-bottom: 15px;
 }
 
+/*captions style*/
+.name-box {
+    margin: 7px;
+    border: 7px;
+    padding: 5px;
+    border-color: var(--nameblue);
+    background-color: var(--nameblue);
+
+}
+
 figcaption.name-box-banner-text {
+    margin: 7px;
+    border: 7px;
+    padding: 5px;
+    top: 400px;
+    left: 155px;
+    border-color: var(--offwhite);
+    background-color: var(--offwhite);
     text-align: center;
     position: absolute;
-    top: 50%;
     color: var(--parblue);
+    font-size: 19px;
 }
+
+.aboutme-text {
+    margin: 7px;
+    border: 7px;
+    padding: 5px;
+    top: 610px;
+    left: 340px;
+    border-color: var(--lblue);
+    background-color: var(--lblue);
+    text-align: center;
+    position: absolute;
+    color: var(--parblue);
+    font-size: 19px;
+}
+
+/*section headers style*/
+.aboutme-head-title,
+.work-head-title,
+.contactme-head-title,
+.resume-head-title {
+    text-align: center;
+    background-color: var(--titleblue);
+    background-size: cover;
+}
+
+/*aboutme img style*/
+.aboutme-img {
+    display: flex;
+    margin: 10px;
+    width: 40%;
+}
+
+
+
