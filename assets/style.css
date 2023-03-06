@@ -12,9 +12,8 @@
     --headblue: #191970;
     --darkblue: #00008B;
     --parblue: #4169E1;
-    --nameblue: #0000CD;
-    --offwhite: #FFF8DC;
     --titleblue: #F0FFFF;
+    --workback: #708090;
 }
 
 /*elements style*/
@@ -54,7 +53,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/*header/main navbar style*/
+/*header/ three navbar style*/
 header {
     padding-top: 6px;
     padding-bottom: 6px;
@@ -67,7 +66,8 @@ header {
 }
 
 header .main-nav ul,
-.contact-nav ul {
+.contact-nav ul,
+.resume-nav {
     margin:10px;
     color: var(--lblue);
     display: flex;
@@ -79,7 +79,8 @@ header .main-nav ul,
 }
 
 header .main-nav ul li a,
-.contact-nav ul li a {
+.contact-nav ul li a,
+.resume-nav ul li a {
     text-decoration: none;
     display: flex;
     padding: 15px 20px;
@@ -172,6 +173,7 @@ figcaption.name-box-banner-text {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    background-color: var(--workback);
 }
 
 .large-work {
@@ -189,10 +191,9 @@ figcaption.name-box-banner-text {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
-    margin-bottom: auto;
-    width: 47%;
+    margin-bottom: 10px;
+    width: 44%;
     height: 100px;
-    position: relative;
 }
 
 .work-image {
@@ -203,15 +204,16 @@ figcaption.name-box-banner-text {
     object-position: top;
 }
 
+/*contact me section style*/
 .contactme {
     background-color: var(--darkblue);
 }
-article.contact-nav {
-    margin:10px;
-    color: var(--lblue);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: space-between;
+
+/*resume section style*/
+.resume {
+    background-color: var(--darkblue);
 }
+
+/*media queries styles*/
+/*laptop/desktop*/
+@media screen and (max-width )
