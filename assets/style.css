@@ -21,7 +21,7 @@
 h1 {
     font-size: 40px;
     font-weight: bold;
-    color: var(--lblue);
+    color: var(--headblue);
 }
 
 h2 {
@@ -31,12 +31,21 @@ h2 {
     color: var(--darkblue);
 }
 
+h3 {
+    font-size: 19px;
+    font-weight: bolder;
+    text-align: left;
+    color: var(--darkblue)
+}
+    
+
 a {
     color: var(--lblue);
 }
 
 p {
-    color: var(--parblue);
+    color: var(--headblue);
+    font-weight: bolder;
 }
 
 /*body style*/
@@ -57,7 +66,8 @@ header {
     justify-content: space-between;
 }
 
-header .main-nav ul {
+header .main-nav ul,
+.contact-nav ul {
     margin:10px;
     color: var(--lblue);
     display: flex;
@@ -65,16 +75,22 @@ header .main-nav ul {
     flex-direction: row;
     list-style-type: none;
     justify-content: space-between;
+    align-items: center;
 }
 
-header .main-nav ul li a {
+header .main-nav ul li a,
+.contact-nav ul li a {
     text-decoration: none;
     display: flex;
-    flex-direction: row;
-    padding: 5px 10px;
+    padding: 15px 20px;
     letter-spacing: 1.5px;
     font-size: 25px;
 }
+
+.contact-nav ul li a {
+    float: left;
+}
+
 
 /*figure (banner) style*/
 .banner {
@@ -86,10 +102,10 @@ header .main-nav ul li a {
 /*captions style*/
 .name-box {
     margin: 7px;
-    border: 7px;
+    border: 7px var(--titleblue);
     padding: 5px;
-    border-color: var(--nameblue);
-    background-color: var(--nameblue);
+    background-color: var(--titleblue);
+    display: flex;
 
 }
 
@@ -98,9 +114,9 @@ figcaption.name-box-banner-text {
     border: 7px;
     padding: 5px;
     top: 400px;
-    left: 155px;
-    border-color: var(--offwhite);
-    background-color: var(--offwhite);
+    left: 690px;
+    border-color: var(--titleblue);
+    background-color: var(--titleblue);
     text-align: center;
     position: absolute;
     color: var(--parblue);
@@ -111,14 +127,26 @@ figcaption.name-box-banner-text {
     margin: 7px;
     border: 7px;
     padding: 5px;
-    top: 610px;
-    left: 340px;
+    top: 690px;
+    left: 545px;
     border-color: var(--lblue);
     background-color: var(--lblue);
     text-align: center;
     position: absolute;
     color: var(--parblue);
+    font-size: 22px;
+}
+
+.name-box-work {
+    margin: 0px;
+    padding: 15px;
+    bottom: 13px;
     font-size: 19px;
+    font-weight: bolder;
+    text-align: left;
+    position: absolute;
+    border-color: var(--titleblue);
+    background-color: var(--titleblue);
 }
 
 /*section headers style*/
@@ -134,9 +162,56 @@ figcaption.name-box-banner-text {
 /*aboutme img style*/
 .aboutme-img {
     display: flex;
-    margin: 10px;
-    width: 40%;
+    margin: 100px;
+    width: 30%;
 }
 
+/*work section style*/
+.work-section-article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.large-work {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 97%;
+    height: 200px;
+    position: relative;
+   
+}
 
+.small-work {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: auto;
+    width: 47%;
+    height: 100px;
+    position: relative;
+}
+
+.work-image {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-position: top;
+}
+
+.contactme {
+    background-color: var(--darkblue);
+}
+article.contact-nav {
+    margin:10px;
+    color: var(--lblue);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+}
