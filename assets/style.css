@@ -67,8 +67,8 @@ header {
 
 header .main-nav ul,
 .contact-nav ul,
-.resume-nav {
-    margin:10px;
+.resume-nav ul {
+    margin: 10px;
     color: var(--lblue);
     display: flex;
     flex-wrap: wrap;
@@ -115,7 +115,7 @@ figcaption.name-box-banner-text {
     border: 7px;
     padding: 5px;
     top: 400px;
-    left: 690px;
+    left: 1200px;
     border-color: var(--titleblue);
     background-color: var(--titleblue);
     text-align: center;
@@ -129,7 +129,7 @@ figcaption.name-box-banner-text {
     border: 7px;
     padding: 5px;
     top: 690px;
-    left: 545px;
+    left: 700px;
     border-color: var(--lblue);
     background-color: var(--lblue);
     text-align: center;
@@ -215,5 +215,130 @@ figcaption.name-box-banner-text {
 }
 
 /*media queries styles*/
-/*laptop/desktop*/
-@media screen and (max-width )
+/*inspect large screen*/
+@media screen and (max-width: 1325px) {
+    figcaption.name-box-banner-text {
+        top: 410px;
+        left: 660px;
+    }
+
+    .aboutme-text {
+        top: 680px;
+        left: 530px;
+    }
+}
+    
+/*laptop*/
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    header .main-nav ul,
+    .contact-nav ul,
+    .resume-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    figcaption.name-box-banner-text {
+        top: 640px;
+        left: 600px;
+    }
+
+    .aboutme-text {
+        top: 835px;
+        left: 400px;
+    }
+}
+
+/*tablet*/
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 200px;
+    }
+
+    figcaption.name-box-banner-text {
+        top: 460px;
+        left: 65px;
+    }
+
+    .aboutme-img {
+        display: flex;
+        margin: 60px;
+        width: 30%;
+    }
+
+    .aboutme-text {
+        top: 605px;
+        left: 310px;
+        font-size: 18px;
+    }
+}
+
+/*smartphone*/
+@media screen and (max-width: 320px) {
+    .banner {
+        display: none;
+    }
+
+    figcaption.name-box-banner-text {
+        display: none;
+    }
+
+    .aboutme-img {
+        display: flex;
+        margin-left: 120px;
+        margin-top: 10px;
+        margin-bottom: 230px;
+        width: 30%;
+    }
+
+    .aboutme-text {
+        top: 460px;
+        left: 10px;
+        font-size: 12px;
+    }
+
+    .work-section-article {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 450x;
+    }
+
+    .large-work {
+        height: 100px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .small-work {
+        width: 90%;
+        margin: 5px;
+        margin-left: 15px;
+    } 
+
+    .name-box-work {
+        display: none;
+    }
+
+    header .main-nav ul li a,
+    .contact-nav ul li a,
+    .resume-nav ul li a {
+    display: flex;
+    padding: 15px 20px;
+    letter-spacing: 0px;
+    font-size: 20px;
+    }
+}
+
+
+
