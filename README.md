@@ -7,7 +7,7 @@ Particularly important skills that were practiced and used in this webpage were 
 ## Installation
 This webpage was uploaded to GitHub at the repository: 
 
-This webpage can also be accessed by the deployed aapplication with the following link:
+This webpage can also be accessed by the deployed aapplication with the following link: https://jacksonhanks.github.io/Professional-Portfolio-JacksonHanks/
 
 ## Credits
 This webpage was created with the help of a tutor, Julio Valdez, and various third-party attributes linked below.
