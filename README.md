@@ -4,7 +4,7 @@ This webpage was created as a professional portfolio to showcase my skills thus 
 
 Particularly important skills that were practiced and used in this webpage were CSS variables, flexbox, and media queries.  
 
-![screencapture-profport](https://user-images.githubusercontent.com/125209654/223062373-a9add389-42e0-4569-aab4-6f2a97c4f51e.png)
+![screencapture-127-0-0-1-5500-index-html-2023-04-10-22_09_30](https://user-images.githubusercontent.com/125209654/231037355-bdcaa5e8-1f3c-4fb4-b212-514849c9d13e.png)
 
 ## Installation
 This webpage was uploaded to GitHub at the repository: https://github.com/jacksonhanks/Professional-Portfolio-JacksonHanks.git
